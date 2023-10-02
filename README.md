@@ -35,12 +35,12 @@
 - ✨Magic ✨
 
 ## Цель работы
-Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
+Научиться записывать на питоне механику / логику изменения игровой переменной. Передавать результаты в гугл таблицу и использовать эти данные в юнити.
 
 ## Задание 1
-### Пошагово выполнить каждый пункт раздела "ход работы" с описанием и примерами реализации задач
+### Выбрать переменную в игре, описать её и построить схему экономической модели.
 Ход работы:
-- Произвести подготовку данных для работы с алгоритмом линейной регрессии. 10 видов данных были установлены случайным образом, и данные находились в линейной зависимости. Данные преобразуются в формат массива, чтобы их можно было вычислить напрямую при использовании умножения и сложения.
+- 
 
 ```py
 
@@ -68,58 +68,20 @@ plt.scatter(x,y)
 ## Задание 2
 ### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+![image](https://github.com/nekit-mazut/lab2/assets/145917921/a002301f-692e-44ce-9ba4-72bdffcb2af0)
 
-```py
+![image](https://github.com/nekit-mazut/lab2/assets/145917921/f95caa21-5541-441e-8a5c-fd50f54df8d1)
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
+![image](https://github.com/nekit-mazut/lab2/assets/145917921/892908d0-efbd-4f6a-bea7-9da55789a462)
 
 ## Задание 3
 ### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
 
-```py
+https://github.com/nekit-mazut/lab2/assets/145917921/4a9e07c7-b318-4f0d-81ed-049dfbd63781
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
 
-```
+
 
 ## Выводы
 
