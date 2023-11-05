@@ -71,7 +71,10 @@
 Проект Unity, описывающий динамику изменения здоровья посредством звука.
 
 
-https://github.com/nekit-mazut/lab2/assets/145917921/4a9e07c7-b318-4f0d-81ed-049dfbd63781
+
+https://github.com/nekit-mazut/lab2/assets/145917921/2bef6837-ed3a-490c-8c2f-3e7c3b07729f
+
+
 
 
 
